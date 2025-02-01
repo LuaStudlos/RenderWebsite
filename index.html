@@ -24,7 +24,6 @@
             background: linear-gradient(135deg, #1c1c1c, #333);
         }
 
-        /* Snowflakes styling */
         .snowflakes {
             position: absolute;
             top: 0;
@@ -123,7 +122,6 @@
             animation-delay: 3s;
         }
 
-        /* Main content */
         .container {
             text-align: center;
             z-index: 2;
@@ -169,7 +167,6 @@
             }
         }
 
-        /* Owner Panel */
         .owner-panel {
             position: absolute;
             top: 20px;
@@ -189,7 +186,6 @@
                 margin-right: 10px;
             }
 
-        /* Tab Styles */
         .tabs {
             display: flex;
             justify-content: center;
@@ -219,7 +215,6 @@
                 background-color: #777;
             }
 
-        /* Buttons Styling */
         .buttons {
             margin-top: 30px;
             display: flex;
@@ -250,7 +245,6 @@
                 outline: none;
             }
 
-        /* Content Containers */
         .content {
             display: none;
         }
@@ -259,7 +253,6 @@
                 display: block;
             }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -282,7 +275,6 @@
 </head>
 <body>
 
-    <!-- Snowflakes Background -->
     <div class="snowflakes">
         <div class="snowflake"></div>
         <div class="snowflake"></div>
@@ -295,20 +287,17 @@
         <div class="snowflake"></div>
     </div>
 
-    <!-- Tabs -->
     <div class="tabs">
         <div class="tab active" id="homeTab">Home</div>
         <div class="tab" id="creditsTab">Credits</div>
     </div>
 
-    <!-- Content Containers -->
     <div class="content active" id="homeContent">
         <img src="exec.png" alt="Exec Image">
         <div class="container">
             <h1>Best API in Roblox. 93 unc 98 sunc</h1>
         </div>
         <div class="buttons">
-            <!-- Download Button with alert -->
             <button class="button" id="downloadButton">Download</button>
             <button class="button">Discord</button>
         </div>
@@ -321,12 +310,10 @@
         </div>
     </div>
 
-    <!-- Logo Panel -->
     <div class="owner-panel">
         <img src="Render.png" alt="Logo Image">
     </div>
 
-    <!-- JavaScript to toggle tabs and handle the Download button alert -->
     <script>
         const homeTab = document.getElementById('homeTab');
         const creditsTab = document.getElementById('creditsTab');
@@ -348,9 +335,8 @@
             homeContent.classList.remove('active');
         });
 
-        // Download button click event with alert
         downloadButton.addEventListener('click', () => {
-            alert('Not released yet');
+            alert('API isnt released.');
         });
     </script>
 
