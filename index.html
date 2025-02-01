@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Render</title> <!-- Changed the title here -->
+    <title>Render</title>
     <style>
         * {
             margin: 0;
@@ -308,7 +308,8 @@
             <h1>Best API in Roblox. 93 unc 98 sunc</h1>
         </div>
         <div class="buttons">
-            <button class="button">Download</button>
+            <!-- Download Button with alert -->
+            <button class="button" id="downloadButton">Download</button>
             <button class="button">Discord</button>
         </div>
     </div>
@@ -325,12 +326,13 @@
         <img src="Render.png" alt="Logo Image">
     </div>
 
-    <!-- JavaScript to toggle tabs -->
+    <!-- JavaScript to toggle tabs and handle the Download button alert -->
     <script>
         const homeTab = document.getElementById('homeTab');
         const creditsTab = document.getElementById('creditsTab');
         const homeContent = document.getElementById('homeContent');
         const creditsContent = document.getElementById('creditsContent');
+        const downloadButton = document.getElementById('downloadButton');
 
         homeTab.addEventListener('click', () => {
             homeTab.classList.add('active');
@@ -344,6 +346,11 @@
             homeTab.classList.remove('active');
             creditsContent.classList.add('active');
             homeContent.classList.remove('active');
+        });
+
+        // Download button click event with alert
+        downloadButton.addEventListener('click', () => {
+            alert('Not released yet');
         });
     </script>
 
